@@ -89,9 +89,6 @@
 						<allure.results.directory>${allure.results.directory}
 						</allure.results.directory>
 					</systemPropertyVariables>
-					<!-- <parallel>methods</parallel> <useUnlimitedThreads>true</useUnlimitedThreads> -->
-					<!-- <properties> <property> <name>listener</name> <value>io.qameta.allure.junit4.AllureJunit4</value> 
-						</property> </properties> -->
 				</configuration>
 			</plugin>
 			<plugin>
