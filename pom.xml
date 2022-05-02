@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>tech.grasshopper</groupId>
 	<artifactId>cucumber-rest-assured-testng-report</artifactId>
-	<version>2.1.0</version>
+	<version>2.1.1</version>
 
 	<properties>
 		<allure.results.directory>
@@ -32,8 +32,6 @@
 			<version>7.2.3</version>
 			<scope>test</scope>
 		</dependency>
-		<!-- <dependency> <groupId>io.qameta.allure</groupId> <artifactId>allure-rest-assured</artifactId> 
-			<version>2.14.0</version> <scope>test</scope> </dependency> -->
 		<dependency>
 			<groupId>tech.grasshopper</groupId>
 			<artifactId>extent-allure-rest-assured</artifactId>
@@ -43,7 +41,7 @@
 		<dependency>
 			<groupId>io.qameta.allure</groupId>
 			<artifactId>allure-testng</artifactId>
-			<version>2.14.0</version>
+			<version>2.17.3</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -95,7 +93,7 @@
 			<plugin>
 				<groupId>tech.grasshopper</groupId>
 				<artifactId>cucumber-rest-assured-extent-report-plugin</artifactId>
-				<version>2.1.0</version>
+				<version>2.1.1</version>
 				<executions>
 					<execution>
 						<id>report</id>
