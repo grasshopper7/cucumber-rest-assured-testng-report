@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Mar 13, 2022 11:12:53 PM</span></a>
+<a href="#"><span class="badge badge-primary">May 13, 2022 09:13:51 PM</span></a>
 </li>
 </ul>
 </div>
@@ -71,19 +71,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Mar 13, 2022 11:12:53 PM</h3>
+<h3>May 13, 2022 09:13:51 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Mar 13, 2022 11:13:09 PM</h3>
+<h3>May 13, 2022 09:14:05 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>1</h3>
+<h3>2</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -105,12 +105,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'>
-<b>1</b> features passed
+<div><small data-tooltip='66%'>
+<b>2</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='50%'><b>1</b> features failed,
+<small data-tooltip='33%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -128,9 +128,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='70%'><b>7</b> scenarios passed</small></div>
+<div><small data-tooltip='75%'><b>9</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='30%'><b>3</b> scenarios failed,
+<small data-tooltip='25%'><b>3</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -148,9 +148,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='91%'><b>32</b> steps passed</small></div>
+<div><small data-tooltip='92%'><b>38</b> steps passed</small></div>
 <div>
-<small data-tooltip='8%'><b>3</b> steps failed,
+<small data-tooltip='7%'><b>3</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Get book by ISBN":11.276,"Get city airdata":4.238
+"Get book by ISBN":8.18,"Get city airdata":3.236,"Parameters and multi part form data":2.426
 };
 </script>
 <div class="row">
@@ -177,6 +177,14 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
+<td>@city</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
 <td>@books</td>
 <td>2</td>
 <td>4</td>
@@ -185,8 +193,8 @@ var timeline = {
 <td>33.333%</td>
 </tr>
 <tr>
-<td>@city</td>
-<td>6</td>
+<td>@parameter</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -223,18 +231,18 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
+passParent: 2,
 failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 7,
+passChild: 9,
 failChild: 3,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 32,
+passGrandChild: 38,
 failGrandChild: 3,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -260,7 +268,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@books</a><a class="dropdown-item" href="#">@city</a>
+<a class="dropdown-item" href="#">@city</a><a class="dropdown-item" href="#">@books</a><a class="dropdown-item" href="#">@parameter</a>
 </ul>
 </li>
 </ul>
@@ -273,7 +281,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Get book by ISBN</p>
             <p class="text-sm">
-              <span>11:12:53 PM</span> / <span>00:00:11:276</span>
+              <span>9:13:51 PM</span> / <span>00:00:08:180</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -282,9 +290,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Get book by ISBN</h5>
-<span class='badge badge-success'>03.13.2022 11:12:53 PM</span>
-<span class='badge badge-danger'>03.13.2022 11:13:04 PM</span>
-<span class='badge badge-default'>00:00:11:276</span>
+<span class='badge badge-success'>05.13.2022 9:13:51 PM</span>
+<span class='badge badge-danger'>05.13.2022 9:13:59 PM</span>
+<span class='badge badge-default'>00:00:08:180</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -323,9 +331,9 @@ eventsCount: 5,
  				</tr>
  				<tr class="event-row">
  					<td class="bold10">Request</td>
- 					<td class="width40" colspan=2><span data="data/5e11668e-ba79-4d55-9b89-202637fb1223-Headers.html" type="Headers"><a href='#' onClick="window.open('data/5e11668e-ba79-4d55-9b89-202637fb1223-Headers.html','','width=700,height=500'); return false;">Headers</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="width40" colspan=2><span data="data/06711e19-ab3f-46cb-9e9d-bd756dcf5396-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/06711e19-ab3f-46cb-9e9d-bd756dcf5396-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;<span data="data/06711e19-ab3f-46cb-9e9d-bd756dcf5396-All Parameters.html" type="Parameters"><a href='#' onClick="window.open('data/06711e19-ab3f-46cb-9e9d-bd756dcf5396-All Parameters.html','','width=700,height=500'); return false;">Parameters</a></span> &nbsp;&nbsp;&nbsp;</td>
  					<td class="bold10">Response</td>
- 					<td class="width40"><span data="data/93913d06-5d03-4b85-a2c1-637d3798846e-Body.html" type="Body"><a href='#' onClick="window.open('data/93913d06-5d03-4b85-a2c1-637d3798846e-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/93913d06-5d03-4b85-a2c1-637d3798846e-Headers.html" type="Headers"><a href='#' onClick="window.open('data/93913d06-5d03-4b85-a2c1-637d3798846e-Headers.html','','width=700,height=500'); return false;">Headers</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="width40"><span data="data/4d82a664-e8c7-49a6-b4e0-8bc2a10e31bf-Body.html" type="Body"><a href='#' onClick="window.open('data/4d82a664-e8c7-49a6-b4e0-8bc2a10e31bf-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/4d82a664-e8c7-49a6-b4e0-8bc2a10e31bf-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/4d82a664-e8c7-49a6-b4e0-8bc2a10e31bf-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
  				</tr>	  				
   			</tbody>
 		</table>
@@ -397,9 +405,9 @@ eventsCount: 5,
  				</tr>
  				<tr class="event-row">
  					<td class="bold10">Request</td>
- 					<td class="width40" colspan=2><span data="data/30cbb1b2-96ea-41a1-9685-83bb6601b37b-Headers.html" type="Headers"><a href='#' onClick="window.open('data/30cbb1b2-96ea-41a1-9685-83bb6601b37b-Headers.html','','width=700,height=500'); return false;">Headers</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="width40" colspan=2><span data="data/49b7d756-08c6-42b6-9b64-f18f4654cbcf-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/49b7d756-08c6-42b6-9b64-f18f4654cbcf-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;<span data="data/49b7d756-08c6-42b6-9b64-f18f4654cbcf-All Parameters.html" type="Parameters"><a href='#' onClick="window.open('data/49b7d756-08c6-42b6-9b64-f18f4654cbcf-All Parameters.html','','width=700,height=500'); return false;">Parameters</a></span> &nbsp;&nbsp;&nbsp;</td>
  					<td class="bold10">Response</td>
- 					<td class="width40"><span data="data/ac8cae79-b6c5-4bb1-98a8-68c4c3c44bab-Body.html" type="Body"><a href='#' onClick="window.open('data/ac8cae79-b6c5-4bb1-98a8-68c4c3c44bab-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/ac8cae79-b6c5-4bb1-98a8-68c4c3c44bab-Headers.html" type="Headers"><a href='#' onClick="window.open('data/ac8cae79-b6c5-4bb1-98a8-68c4c3c44bab-Headers.html','','width=700,height=500'); return false;">Headers</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="width40"><span data="data/df9e6794-dfa7-4c08-a591-fa910329736d-Body.html" type="Body"><a href='#' onClick="window.open('data/df9e6794-dfa7-4c08-a591-fa910329736d-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/df9e6794-dfa7-4c08-a591-fa910329736d-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/df9e6794-dfa7-4c08-a591-fa910329736d-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
  				</tr>	  				
   			</tbody>
 		</table>
@@ -449,9 +457,9 @@ eventsCount: 5,
  				</tr>
  				<tr class="event-row">
  					<td class="bold10">Request</td>
- 					<td class="width40" colspan=2><span data="data/f2d43513-96ba-4e39-a1de-2806cb208334-Headers.html" type="Headers"><a href='#' onClick="window.open('data/f2d43513-96ba-4e39-a1de-2806cb208334-Headers.html','','width=700,height=500'); return false;">Headers</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="width40" colspan=2><span data="data/0011c3e6-d356-43ee-a23a-958ff14e5613-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/0011c3e6-d356-43ee-a23a-958ff14e5613-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;<span data="data/0011c3e6-d356-43ee-a23a-958ff14e5613-All Parameters.html" type="Parameters"><a href='#' onClick="window.open('data/0011c3e6-d356-43ee-a23a-958ff14e5613-All Parameters.html','','width=700,height=500'); return false;">Parameters</a></span> &nbsp;&nbsp;&nbsp;</td>
  					<td class="bold10">Response</td>
- 					<td class="width40"><span data="data/bb9c4fc0-5baa-4ae8-9126-25608fa84447-Body.html" type="Body"><a href='#' onClick="window.open('data/bb9c4fc0-5baa-4ae8-9126-25608fa84447-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/bb9c4fc0-5baa-4ae8-9126-25608fa84447-Headers.html" type="Headers"><a href='#' onClick="window.open('data/bb9c4fc0-5baa-4ae8-9126-25608fa84447-Headers.html','','width=700,height=500'); return false;">Headers</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="width40"><span data="data/d6aedc3f-d39f-43ff-88bf-b94efb3f5971-Body.html" type="Body"><a href='#' onClick="window.open('data/d6aedc3f-d39f-43ff-88bf-b94efb3f5971-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/d6aedc3f-d39f-43ff-88bf-b94efb3f5971-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/d6aedc3f-d39f-43ff-88bf-b94efb3f5971-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
  				</tr>	  				
   			</tbody>
 		</table>
@@ -472,44 +480,6 @@ eventsCount: 5,
         <textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
 Expected status code <404> but was <200>.
 
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
-	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
-	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
-	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
-	at stepdefs.BookStepDefinitions.verify_status_code(BookStepDefinitions.java:40)
-	at ?.the status code is 404(classpath:stepdefs/book.feature:19)
 
 </textarea>
       
@@ -548,9 +518,9 @@ Expected status code <404> but was <200>.
  				</tr>
  				<tr class="event-row">
  					<td class="bold10">Request</td>
- 					<td class="width40" colspan=2><span data="data/9b2f0fa9-bcbf-48b4-8e31-8e5dfb4b68ac-Headers.html" type="Headers"><a href='#' onClick="window.open('data/9b2f0fa9-bcbf-48b4-8e31-8e5dfb4b68ac-Headers.html','','width=700,height=500'); return false;">Headers</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="width40" colspan=2><span data="data/f6b212a2-52dc-407f-aa24-2eeae4f4eade-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/f6b212a2-52dc-407f-aa24-2eeae4f4eade-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;<span data="data/f6b212a2-52dc-407f-aa24-2eeae4f4eade-All Parameters.html" type="Parameters"><a href='#' onClick="window.open('data/f6b212a2-52dc-407f-aa24-2eeae4f4eade-All Parameters.html','','width=700,height=500'); return false;">Parameters</a></span> &nbsp;&nbsp;&nbsp;</td>
  					<td class="bold10">Response</td>
- 					<td class="width40"><span data="data/86d06985-79fe-4310-8c23-ed131cd64a07-Body.html" type="Body"><a href='#' onClick="window.open('data/86d06985-79fe-4310-8c23-ed131cd64a07-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/86d06985-79fe-4310-8c23-ed131cd64a07-Headers.html" type="Headers"><a href='#' onClick="window.open('data/86d06985-79fe-4310-8c23-ed131cd64a07-Headers.html','','width=700,height=500'); return false;">Headers</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="width40"><span data="data/1b0017a9-a747-4aae-ad42-41c007cea94f-Body.html" type="Body"><a href='#' onClick="window.open('data/1b0017a9-a747-4aae-ad42-41c007cea94f-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/1b0017a9-a747-4aae-ad42-41c007cea94f-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/1b0017a9-a747-4aae-ad42-41c007cea94f-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
  				</tr>	  				
   			</tbody>
 		</table>
@@ -571,42 +541,6 @@ Expected status code <404> but was <200>.
         <textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
 Expected status code <404> but was <200>.
 
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
-	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
-	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
-	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
-	at stepdefs.BookStepDefinitions.verify_status_code(BookStepDefinitions.java:40)
-	at ?.the status code is 404(classpath:stepdefs/book.feature:29)
 
 </textarea>
       
@@ -644,9 +578,9 @@ Expected status code <404> but was <200>.
  				</tr>
  				<tr class="event-row">
  					<td class="bold10">Request</td>
- 					<td class="width40" colspan=2><span data="data/76154426-5b80-4031-b02b-daf9c1378407-Headers.html" type="Headers"><a href='#' onClick="window.open('data/76154426-5b80-4031-b02b-daf9c1378407-Headers.html','','width=700,height=500'); return false;">Headers</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="width40" colspan=2><span data="data/65b34266-c150-458d-af15-b2ef81ad0f24-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/65b34266-c150-458d-af15-b2ef81ad0f24-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;<span data="data/65b34266-c150-458d-af15-b2ef81ad0f24-All Parameters.html" type="Parameters"><a href='#' onClick="window.open('data/65b34266-c150-458d-af15-b2ef81ad0f24-All Parameters.html','','width=700,height=500'); return false;">Parameters</a></span> &nbsp;&nbsp;&nbsp;</td>
  					<td class="bold10">Response</td>
- 					<td class="width40"><span data="data/03c8fa9d-b78c-4f1f-a463-ede772276db3-Body.html" type="Body"><a href='#' onClick="window.open('data/03c8fa9d-b78c-4f1f-a463-ede772276db3-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/03c8fa9d-b78c-4f1f-a463-ede772276db3-Headers.html" type="Headers"><a href='#' onClick="window.open('data/03c8fa9d-b78c-4f1f-a463-ede772276db3-Headers.html','','width=700,height=500'); return false;">Headers</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="width40"><span data="data/551d11b6-da16-4e9a-a721-d8923d19c89f-Body.html" type="Body"><a href='#' onClick="window.open('data/551d11b6-da16-4e9a-a721-d8923d19c89f-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/551d11b6-da16-4e9a-a721-d8923d19c89f-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/551d11b6-da16-4e9a-a721-d8923d19c89f-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
  				</tr>	  				
   			</tbody>
 		</table>
@@ -661,9 +595,9 @@ Expected status code <404> but was <200>.
  				</tr>
  				<tr class="event-row">
  					<td class="bold10">Request</td>
- 					<td class="width40" colspan=2><span data="data/0f3dcb18-f4d6-45e7-8255-16ee3b35837f-Headers.html" type="Headers"><a href='#' onClick="window.open('data/0f3dcb18-f4d6-45e7-8255-16ee3b35837f-Headers.html','','width=700,height=500'); return false;">Headers</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="width40" colspan=2><span data="data/75431b8e-07b1-4bdf-93cc-5e5d0d72bfe8-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/75431b8e-07b1-4bdf-93cc-5e5d0d72bfe8-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;<span data="data/75431b8e-07b1-4bdf-93cc-5e5d0d72bfe8-All Parameters.html" type="Parameters"><a href='#' onClick="window.open('data/75431b8e-07b1-4bdf-93cc-5e5d0d72bfe8-All Parameters.html','','width=700,height=500'); return false;">Parameters</a></span> &nbsp;&nbsp;&nbsp;</td>
  					<td class="bold10">Response</td>
- 					<td class="width40"><span data="data/5e4ec438-37ac-4e7f-8160-b9f35a44da27-Body.html" type="Body"><a href='#' onClick="window.open('data/5e4ec438-37ac-4e7f-8160-b9f35a44da27-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/5e4ec438-37ac-4e7f-8160-b9f35a44da27-Headers.html" type="Headers"><a href='#' onClick="window.open('data/5e4ec438-37ac-4e7f-8160-b9f35a44da27-Headers.html','','width=700,height=500'); return false;">Headers</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="width40"><span data="data/e314569d-21a2-4afc-85b4-9cc9369971de-Body.html" type="Body"><a href='#' onClick="window.open('data/e314569d-21a2-4afc-85b4-9cc9369971de-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/e314569d-21a2-4afc-85b4-9cc9369971de-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/e314569d-21a2-4afc-85b4-9cc9369971de-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
  				</tr>	  				
   			</tbody>
 		</table>
@@ -699,42 +633,6 @@ Expected status code <404> but was <200>.
         <textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
 Expected status code <404> but was <200>.
 
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
-	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
-	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
-	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
-	at stepdefs.BookStepDefinitions.verify_status_code(BookStepDefinitions.java:40)
-	at ?.the status code is 404(classpath:stepdefs/book.feature:37)
 
 </textarea>
       
@@ -753,7 +651,7 @@ Expected status code <404> but was <200>.
           <div class="test-detail">
             <p class="name">Get city airdata</p>
             <p class="text-sm">
-              <span>11:13:04 PM</span> / <span>00:00:04:238</span>
+              <span>9:13:59 PM</span> / <span>00:00:03:236</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -762,9 +660,9 @@ Expected status code <404> but was <200>.
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Get city airdata</h5>
-<span class='badge badge-success'>03.13.2022 11:13:04 PM</span>
-<span class='badge badge-danger'>03.13.2022 11:13:09 PM</span>
-<span class='badge badge-default'>00:00:04:238</span>
+<span class='badge badge-success'>05.13.2022 9:13:59 PM</span>
+<span class='badge badge-danger'>05.13.2022 9:14:02 PM</span>
+<span class='badge badge-default'>00:00:03:236</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -840,9 +738,9 @@ Expected status code <404> but was <200>.
  				</tr>
  				<tr class="event-row">
  					<td class="bold10">Request</td>
- 					<td class="width40" colspan=2><span data="data/6cb8fe53-81bf-4ad2-a16c-5faad2714354-Headers.html" type="Headers"><a href='#' onClick="window.open('data/6cb8fe53-81bf-4ad2-a16c-5faad2714354-Headers.html','','width=700,height=500'); return false;">Headers</a></span> &nbsp;&nbsp;&nbsp;<span data="data/6cb8fe53-81bf-4ad2-a16c-5faad2714354-Cookies.html" type="Cookies"><a href='#' onClick="window.open('data/6cb8fe53-81bf-4ad2-a16c-5faad2714354-Cookies.html','','width=700,height=500'); return false;">Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="width40" colspan=2><span data="data/71a02aaa-2b1c-4ad6-baa0-e49d316b32df-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/71a02aaa-2b1c-4ad6-baa0-e49d316b32df-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;<span data="data/71a02aaa-2b1c-4ad6-baa0-e49d316b32df-All Parameters.html" type="Parameters"><a href='#' onClick="window.open('data/71a02aaa-2b1c-4ad6-baa0-e49d316b32df-All Parameters.html','','width=700,height=500'); return false;">Parameters</a></span> &nbsp;&nbsp;&nbsp;</td>
  					<td class="bold10">Response</td>
- 					<td class="width40"><span data="data/c178120a-ccb2-4f03-a1c3-cdec7e39c395-Body.html" type="Body"><a href='#' onClick="window.open('data/c178120a-ccb2-4f03-a1c3-cdec7e39c395-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/c178120a-ccb2-4f03-a1c3-cdec7e39c395-Headers.html" type="Headers"><a href='#' onClick="window.open('data/c178120a-ccb2-4f03-a1c3-cdec7e39c395-Headers.html','','width=700,height=500'); return false;">Headers</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="width40"><span data="data/b900d625-c5c6-4b86-9a3c-33bc58944b90-Body.html" type="Body"><a href='#' onClick="window.open('data/b900d625-c5c6-4b86-9a3c-33bc58944b90-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/b900d625-c5c6-4b86-9a3c-33bc58944b90-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/b900d625-c5c6-4b86-9a3c-33bc58944b90-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
  				</tr>	  				
   			</tbody>
 		</table>
@@ -900,9 +798,9 @@ Expected status code <404> but was <200>.
  				</tr>
  				<tr class="event-row">
  					<td class="bold10">Request</td>
- 					<td class="width40" colspan=2><span data="data/73a0d5f9-a112-454e-aa91-38a046e0c334-Headers.html" type="Headers"><a href='#' onClick="window.open('data/73a0d5f9-a112-454e-aa91-38a046e0c334-Headers.html','','width=700,height=500'); return false;">Headers</a></span> &nbsp;&nbsp;&nbsp;<span data="data/73a0d5f9-a112-454e-aa91-38a046e0c334-Cookies.html" type="Cookies"><a href='#' onClick="window.open('data/73a0d5f9-a112-454e-aa91-38a046e0c334-Cookies.html','','width=700,height=500'); return false;">Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="width40" colspan=2><span data="data/9406c19a-1f90-486c-8911-fdfb9a35d38d-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/9406c19a-1f90-486c-8911-fdfb9a35d38d-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;<span data="data/9406c19a-1f90-486c-8911-fdfb9a35d38d-All Parameters.html" type="Parameters"><a href='#' onClick="window.open('data/9406c19a-1f90-486c-8911-fdfb9a35d38d-All Parameters.html','','width=700,height=500'); return false;">Parameters</a></span> &nbsp;&nbsp;&nbsp;</td>
  					<td class="bold10">Response</td>
- 					<td class="width40"><span data="data/f5a9676b-2066-4752-9941-66e528438201-Body.html" type="Body"><a href='#' onClick="window.open('data/f5a9676b-2066-4752-9941-66e528438201-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/f5a9676b-2066-4752-9941-66e528438201-Headers.html" type="Headers"><a href='#' onClick="window.open('data/f5a9676b-2066-4752-9941-66e528438201-Headers.html','','width=700,height=500'); return false;">Headers</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="width40"><span data="data/d279783f-373c-42fb-a7b7-b8e08ffb2a2a-Body.html" type="Body"><a href='#' onClick="window.open('data/d279783f-373c-42fb-a7b7-b8e08ffb2a2a-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/d279783f-373c-42fb-a7b7-b8e08ffb2a2a-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/d279783f-373c-42fb-a7b7-b8e08ffb2a2a-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
  				</tr>	  				
   			</tbody>
 		</table>
@@ -952,9 +850,9 @@ Expected status code <404> but was <200>.
  				</tr>
  				<tr class="event-row">
  					<td class="bold10">Request</td>
- 					<td class="width40" colspan=2><span data="data/0b4c8b52-da1e-4c82-8ca9-6ebfa13e3783-Headers.html" type="Headers"><a href='#' onClick="window.open('data/0b4c8b52-da1e-4c82-8ca9-6ebfa13e3783-Headers.html','','width=700,height=500'); return false;">Headers</a></span> &nbsp;&nbsp;&nbsp;<span data="data/0b4c8b52-da1e-4c82-8ca9-6ebfa13e3783-Cookies.html" type="Cookies"><a href='#' onClick="window.open('data/0b4c8b52-da1e-4c82-8ca9-6ebfa13e3783-Cookies.html','','width=700,height=500'); return false;">Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="width40" colspan=2><span data="data/12d6494a-35b6-4b39-996a-ce8899bad34b-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/12d6494a-35b6-4b39-996a-ce8899bad34b-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;<span data="data/12d6494a-35b6-4b39-996a-ce8899bad34b-All Parameters.html" type="Parameters"><a href='#' onClick="window.open('data/12d6494a-35b6-4b39-996a-ce8899bad34b-All Parameters.html','','width=700,height=500'); return false;">Parameters</a></span> &nbsp;&nbsp;&nbsp;</td>
  					<td class="bold10">Response</td>
- 					<td class="width40"><span data="data/473bcf13-15e3-4ddf-9a5e-ee457b8dc0af-Body.html" type="Body"><a href='#' onClick="window.open('data/473bcf13-15e3-4ddf-9a5e-ee457b8dc0af-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/473bcf13-15e3-4ddf-9a5e-ee457b8dc0af-Headers.html" type="Headers"><a href='#' onClick="window.open('data/473bcf13-15e3-4ddf-9a5e-ee457b8dc0af-Headers.html','','width=700,height=500'); return false;">Headers</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="width40"><span data="data/ea8161dd-d63b-46dd-bd45-c26cb374a98a-Body.html" type="Body"><a href='#' onClick="window.open('data/ea8161dd-d63b-46dd-bd45-c26cb374a98a-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/ea8161dd-d63b-46dd-bd45-c26cb374a98a-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/ea8161dd-d63b-46dd-bd45-c26cb374a98a-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
  				</tr>	  				
   			</tbody>
 		</table>
@@ -1004,9 +902,9 @@ Expected status code <404> but was <200>.
  				</tr>
  				<tr class="event-row">
  					<td class="bold10">Request</td>
- 					<td class="width40" colspan=2><span data="data/b285f1ed-5cda-4a35-8786-65dd8dcba6bb-Headers.html" type="Headers"><a href='#' onClick="window.open('data/b285f1ed-5cda-4a35-8786-65dd8dcba6bb-Headers.html','','width=700,height=500'); return false;">Headers</a></span> &nbsp;&nbsp;&nbsp;<span data="data/b285f1ed-5cda-4a35-8786-65dd8dcba6bb-Cookies.html" type="Cookies"><a href='#' onClick="window.open('data/b285f1ed-5cda-4a35-8786-65dd8dcba6bb-Cookies.html','','width=700,height=500'); return false;">Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="width40" colspan=2><span data="data/1bbf5a21-e8af-4a2a-83cb-decb6519a4f0-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/1bbf5a21-e8af-4a2a-83cb-decb6519a4f0-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;<span data="data/1bbf5a21-e8af-4a2a-83cb-decb6519a4f0-All Parameters.html" type="Parameters"><a href='#' onClick="window.open('data/1bbf5a21-e8af-4a2a-83cb-decb6519a4f0-All Parameters.html','','width=700,height=500'); return false;">Parameters</a></span> &nbsp;&nbsp;&nbsp;</td>
  					<td class="bold10">Response</td>
- 					<td class="width40"><span data="data/7d803263-2b02-4521-bc92-a712d4a8bd76-Body.html" type="Body"><a href='#' onClick="window.open('data/7d803263-2b02-4521-bc92-a712d4a8bd76-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/7d803263-2b02-4521-bc92-a712d4a8bd76-Headers.html" type="Headers"><a href='#' onClick="window.open('data/7d803263-2b02-4521-bc92-a712d4a8bd76-Headers.html','','width=700,height=500'); return false;">Headers</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="width40"><span data="data/24a27772-d9be-49da-a306-d30761c7a97b-Body.html" type="Body"><a href='#' onClick="window.open('data/24a27772-d9be-49da-a306-d30761c7a97b-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/24a27772-d9be-49da-a306-d30761c7a97b-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/24a27772-d9be-49da-a306-d30761c7a97b-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
  				</tr>	  				
   			</tbody>
 		</table>
@@ -1028,6 +926,145 @@ Expected status code <404> but was <200>.
                   </div>
               </div>
             </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="50"
+          author=""
+          tag="@parameter"
+          device="">
+          <div class="test-detail">
+            <p class="name">Parameters and multi part form data</p>
+            <p class="text-sm">
+              <span>9:14:02 PM</span> / <span>00:00:02:426</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Parameters and multi part form data</h5>
+<span class='badge badge-success'>05.13.2022 9:14:02 PM</span>
+<span class='badge badge-danger'>05.13.2022 9:14:05 PM</span>
+<span class='badge badge-default'>00:00:02:426</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=50</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">@parameter</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="51"><span class="badge log pass-bg mr-2">Pass</span>Multi part form data display</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+
+<!-- Hack to include styles as do not have access to online css and js locations -->
+<style>
+.italic10 {width:10%;font-weight: bold;font-style: italic;}
+.bold10 {width:10%;font-weight: bold;}
+.width40 {width:40%;}
+</style>
+
+
+		    		
+ 		
+ 		
+		<table class="table table-sm">
+			<tbody> 				
+ 				<tr class="event-row">
+ 					<td class="italic10">GET</td>
+ 					<td class="italic10">200</td>
+ 					<td colspan=3>https://run.mocky.io/v3/e2ba1326-1863-40da-9666-ff70661b2111?hello=hello</td>
+ 				</tr>
+ 				<tr class="event-row">
+ 					<td class="bold10">Request</td>
+ 					<td class="width40" colspan=2><span data="data/287dddd8-6a9a-43aa-83d1-557e352ca840-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/287dddd8-6a9a-43aa-83d1-557e352ca840-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;<span data="data/287dddd8-6a9a-43aa-83d1-557e352ca840-All Parameters.html" type="Parameters"><a href='#' onClick="window.open('data/287dddd8-6a9a-43aa-83d1-557e352ca840-All Parameters.html','','width=700,height=500'); return false;">Parameters</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="bold10">Response</td>
+ 					<td class="width40"><span data="data/79c6abfc-979e-4ee2-8556-4e88fa0a6b92-Body.html" type="Body"><a href='#' onClick="window.open('data/79c6abfc-979e-4ee2-8556-4e88fa0a6b92-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/79c6abfc-979e-4ee2-8556-4e88fa0a6b92-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/79c6abfc-979e-4ee2-8556-4e88fa0a6b92-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 				</tr>	  				
+  			</tbody>
+		</table>
+	
+              <div class="step pass-bg" title="stepdefs.ParametersStepDefinitions.prepare_data_for_submission()">
+                <span>Given prepare data for submission</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.ParametersStepDefinitions.retrieve_the_mocked_data()">
+                <span>When retrieve the mocked data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.ParametersStepDefinitions.verify_status_code(int)">
+                <span>Then verify status code is 200</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="55"><span class="badge log pass-bg mr-2">Pass</span>Parameter data display</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+
+<!-- Hack to include styles as do not have access to online css and js locations -->
+<style>
+.italic10 {width:10%;font-weight: bold;font-style: italic;}
+.bold10 {width:10%;font-weight: bold;}
+.width40 {width:40%;}
+</style>
+
+
+		    		
+ 		
+ 		
+		<table class="table table-sm">
+			<tbody> 				
+ 				<tr class="event-row">
+ 					<td class="italic10">GET</td>
+ 					<td class="italic10">200</td>
+ 					<td colspan=3>https://run.mocky.io/v3/e2ba1326-1863-40da-9666-ff70661b2111?hello=hello&query=query&form=form</td>
+ 				</tr>
+ 				<tr class="event-row">
+ 					<td class="bold10">Request</td>
+ 					<td class="width40" colspan=2><span data="data/25514295-ac10-4194-bc92-cfb2d1d7a475-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/25514295-ac10-4194-bc92-cfb2d1d7a475-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;<span data="data/25514295-ac10-4194-bc92-cfb2d1d7a475-All Parameters.html" type="Parameters"><a href='#' onClick="window.open('data/25514295-ac10-4194-bc92-cfb2d1d7a475-All Parameters.html','','width=700,height=500'); return false;">Parameters</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="bold10">Response</td>
+ 					<td class="width40"><span data="data/c3403fa2-6b19-42a4-a106-daa7efc69a9b-Body.html" type="Body"><a href='#' onClick="window.open('data/c3403fa2-6b19-42a4-a106-daa7efc69a9b-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/c3403fa2-6b19-42a4-a106-daa7efc69a9b-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/c3403fa2-6b19-42a4-a106-daa7efc69a9b-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 				</tr>	  				
+  			</tbody>
+		</table>
+	
+              <div class="step pass-bg" title="stepdefs.ParametersStepDefinitions.prepare_parameter_data_for_submission()">
+                <span>Given prepare parameter data for submission</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.ParametersStepDefinitions.retrieve_the_mocked_data()">
+                <span>When retrieve the mocked data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.ParametersStepDefinitions.verify_status_code(int)">
+                <span>Then verify status code is 200</span>
+      <div>
+      </div>
+              </div>
+          </div>
         </div>
   </div>
 </div>
@@ -1074,7 +1111,7 @@ Expected status code <404> but was <200>.
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>23:13:02 PM</td>
+<td>21:13:57 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='16'>Then the status code is 404</a>
 <div class="">
@@ -1084,7 +1121,7 @@ Expected status code <404> but was <200>.
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>23:13:03 PM</td>
+<td>21:13:57 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='20'>Then the status code is 404</a>
 <div class="">
@@ -1094,7 +1131,7 @@ Expected status code <404> but was <200>.
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>23:13:04 PM</td>
+<td>21:13:59 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='27'>Then the status code is 404</a>
 <div class="">
@@ -1118,10 +1155,93 @@ Expected status code <404> but was <200>.
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">@city</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@city</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:13:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='28'>Get city airdata</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:13:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='29'>Simple cuke test</a>
+<div class="">
+<span class="badge badge-default">Get city airdata.Simple cuke test</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:13:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='33'>User calls web service to get london air data</a>
+<div class="">
+<span class="badge badge-default">Get city airdata.User calls web service to get london air data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:14:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='38'>User calls web service to get munich air data</a>
+<div class="">
+<span class="badge badge-default">Get city airdata.User calls web service to get munich air data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:14:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='42'>User calls web service to get paris air data</a>
+<div class="">
+<span class="badge badge-default">Get city airdata.User calls web service to get paris air data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:14:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='46'>User calls web service to get rome air data</a>
+<div class="">
+<span class="badge badge-default">Get city airdata.User calls web service to get rome air data</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
@@ -1148,14 +1268,14 @@ Expected status code <404> but was <200>.
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>23:12:53 PM</td>
+<td>21:13:51 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>Get book by ISBN</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>23:12:53 PM</td>
+<td>21:13:51 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>User calls web service to get a book by its ISBN</a>
 <div class="">
@@ -1165,7 +1285,7 @@ Expected status code <404> but was <200>.
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>23:13:00 PM</td>
+<td>21:13:55 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='9'>ISBN Google Base</a>
 <div class="">
@@ -1175,7 +1295,7 @@ Expected status code <404> but was <200>.
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>23:13:01 PM</td>
+<td>21:13:56 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='13'>ISBN Google Base</a>
 <div class="">
@@ -1185,7 +1305,7 @@ Expected status code <404> but was <200>.
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>23:13:02 PM</td>
+<td>21:13:57 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='17'>User calls web service to get a non existant book by its ISBN</a>
 <div class="">
@@ -1195,7 +1315,7 @@ Expected status code <404> but was <200>.
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>23:13:03 PM</td>
+<td>21:13:57 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='21'>User ISBN 2 calls</a>
 <div class="">
@@ -1210,15 +1330,15 @@ Expected status code <404> but was <200>.
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>6</span>
+<span class='badge log pass-bg'>3</span>
 </span>
-<p class="name">@city</p>
-<p class="duration text-sm">6 tests</p>
+<p class="name">@parameter</p>
+<p class="duration text-sm">3 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@city</h4>
-<span status="pass" class='badge log pass-bg'>6 passed</span>
+<h4>@parameter</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1231,58 +1351,28 @@ Expected status code <404> but was <200>.
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>23:13:04 PM</td>
+<td>21:14:02 PM</td>
 <td>
-<a href="#" class="linked" test-id='28' id='28'>Get city airdata</a>
+<a href="#" class="linked" test-id='50' id='50'>Parameters and multi part form data</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>23:13:04 PM</td>
+<td>21:14:02 PM</td>
 <td>
-<a href="#" class="linked" test-id='28' id='29'>Simple cuke test</a>
+<a href="#" class="linked" test-id='50' id='51'>Multi part form data display</a>
 <div class="">
-<span class="badge badge-default">Get city airdata.Simple cuke test</span>
+<span class="badge badge-default">Parameters and multi part form data.Multi part form data display</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>23:13:04 PM</td>
+<td>21:14:04 PM</td>
 <td>
-<a href="#" class="linked" test-id='28' id='33'>User calls web service to get london air data</a>
+<a href="#" class="linked" test-id='50' id='55'>Parameter data display</a>
 <div class="">
-<span class="badge badge-default">Get city airdata.User calls web service to get london air data</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>23:13:05 PM</td>
-<td>
-<a href="#" class="linked" test-id='28' id='38'>User calls web service to get munich air data</a>
-<div class="">
-<span class="badge badge-default">Get city airdata.User calls web service to get munich air data</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>23:13:06 PM</td>
-<td>
-<a href="#" class="linked" test-id='28' id='42'>User calls web service to get paris air data</a>
-<div class="">
-<span class="badge badge-default">Get city airdata.User calls web service to get paris air data</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>23:13:08 PM</td>
-<td>
-<a href="#" class="linked" test-id='28' id='46'>User calls web service to get rome air data</a>
-<div class="">
-<span class="badge badge-default">Get city airdata.User calls web service to get rome air data</span>
+<span class="badge badge-default">Parameters and multi part form data.Parameter data display</span>
 </div>
 </td>
 </tr>
